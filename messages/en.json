@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Start Your Business Journey in Dubai",
+    "subtitle": "Expert guidance for company formation, banking, tax advisory, and ongoing support. Your trusted partner for UAE business success.",
+    "cta": "Get Started"
+  },
+  "services": {
+    "sectionTitle": "Our Services",
+    "sectionDescription": "Comprehensive business setup services in Dubai. From company formation to ongoing support, we provide expert guidance for your UAE business success.",
+    "businessSetup": {
+      "title": "Company Formation",
+      "description": "Professional business registration services in Dubai with expert guidance."
+    },
+    "legalServices": {
+      "title": "Legal Services",
+      "description": "Comprehensive legal support for your business operations in the UAE."
+    },
+    "taxAccounting": {
+      "title": "Tax & Accounting",
+      "description": "Expert tax planning and accounting services for UAE businesses."
+    },
+    "visaServices": {
+      "title": "Visa Services",
+      "description": "Professional visa and immigration services for entrepreneurs."
+    },
+    "investment": {
+      "title": "Investment Advisory",
+      "description": "Strategic investment guidance for business growth in Dubai."
+    },
+    "consulting": {
+      "title": "Business Consulting",
+      "description": "Strategic business consulting and market entry support."
+    },
+    "ctaTitle": "Ready to Start Your Business in Dubai?",
+    "ctaDescription": "Let's discuss your business goals and discover how our expert team can help you achieve success in the UAE market.",
+    "ctaButton": "Get Free Consultation",
+    "viewAllButton": "View All Services"
+  },
+  "common": {
+    "learnMore": "Learn More"
+  },
+  "footer": {
+    "description": "Your trusted partner in UAE business success. Professional business setup consultancy services in Dubai with over 15 years of experience.",
+    "address": "Business Bay, Dubai, UAE",
+    "phone": "+971 4 123 4567",
+    "email": "info@dubaiconsulting.ae",
+    "quickLinks": "Quick Links",
+    "services": "Our Services",
+    "resources": "Resources",
+    "company": "Company",
+    "blog": "Blog",
+    "guides": "Guides",
+    "faqs": "FAQs",
+    "about": "About Us",
+    "team": "Our Team",
+    "careers": "Careers",
+    "newsletter": "Stay Updated with Our Newsletter",
+    "newsletterDescription": "Get the latest business insights, regulatory updates, and expert advice delivered directly to your inbox.",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterButton": "Subscribe",
+    "copyright": "© 2024 KPM Global Services. All rights reserved.",
+    "followUs": "Follow Us",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  }
+}

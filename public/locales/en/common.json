@@ -1,0 +1,338 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "resources": "Resources",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "admin": "Admin",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "footer": {
+    "company": "Company",
+    "about": "About Us",
+    "team": "Our Team",
+    "careers": "Careers",
+    "contact": "Contact",
+    "services": "Services",
+    "businessSetup": "Business Setup",
+    "legalServices": "Legal Services",
+    "taxAccounting": "Tax & Accounting",
+    "visaServices": "Visa Services",
+    "resources": "Resources",
+    "blog": "Blog",
+    "guides": "Guides",
+    "faqs": "FAQs",
+    "newsletter": "Newsletter",
+    "newsletterPlaceholder": "Enter your email",
+    "newsletterButton": "Subscribe",
+    "newsletterDescription": "Stay updated with the latest business insights and UAE regulations",
+    "copyright": "© 2024 Dubai Business Setup Consulting. All rights reserved.",
+    "followUs": "Follow Us",
+    "address": "Dubai, United Arab Emirates",
+    "phone": "+971 4 123 4567",
+    "email": "info@dubaiconsulting.ae",
+    "description": "Your trusted partner for business success in the UAE. We provide comprehensive business setup, legal, and consulting services to help entrepreneurs establish and grow their businesses in Dubai.",
+    "quickLinks": "Quick Links",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy"
+  },
+  "hero": {
+    "title": "Your Gateway to Business Success in Dubai",
+    "subtitle": "Comprehensive business setup, legal, and consulting services to help entrepreneurs establish and grow their businesses in the UAE",
+    "cta": "Get Started Today",
+    "learnMore": "Learn More"
+  },
+  "services": {
+    "businessSetup": {
+      "title": "Business Setup",
+      "description": "Complete business formation services including company registration, licensing, and corporate structuring"
+    },
+    "legalServices": {
+      "title": "Legal Services",
+      "description": "Expert legal counsel for business compliance, contracts, and regulatory requirements"
+    },
+    "taxAccounting": {
+      "title": "Tax & Accounting",
+      "description": "Comprehensive tax planning, accounting services, and financial compliance support"
+    },
+    "visaServices": {
+      "title": "Visa Services",
+      "description": "Streamlined visa processing and immigration services for business owners and employees"
+    }
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "readMore": "Read More",
+    "viewAll": "View All",
+    "submit": "Submit",
+    "send": "Send",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "close": "Close",
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "warning": "Warning",
+    "info": "Information"
+  },
+  "about": {
+    "title": "About Dubai Business Setup Consulting",
+    "subtitle": "Your Trusted Partner for Business Success in the UAE",
+    "description": "We are a leading consultancy firm specializing in business setup services in Dubai and across the UAE. With years of experience and deep local knowledge, we help entrepreneurs and companies navigate the complexities of establishing and operating businesses in this dynamic market.",
+    "mission": "Our Mission",
+    "missionText": "To provide comprehensive, reliable, and efficient business setup services that enable entrepreneurs to focus on their core business while we handle the regulatory and administrative complexities.",
+    "vision": "Our Vision",
+    "visionText": "To be the most trusted and preferred business setup consultancy in the UAE, known for excellence, integrity, and client success.",
+    "values": "Our Values",
+    "excellence": "Excellence",
+    "excellenceText": "We maintain the highest standards in all our services and client interactions.",
+    "integrity": "Integrity",
+    "integrityText": "We conduct business with honesty, transparency, and ethical practices.",
+    "innovation": "Innovation",
+    "innovationText": "We continuously improve our processes and embrace new technologies.",
+    "clientFocus": "Client Focus",
+    "clientFocusText": "Our clients' success is our primary goal and measure of achievement."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "Get in Touch for Expert Business Setup Guidance",
+    "description": "Ready to start your business journey in Dubai? Contact our expert team for personalized guidance and support.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Enter your full name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number",
+      "company": "Company Name",
+      "companyPlaceholder": "Enter your company name (optional)",
+      "service": "Service of Interest",
+      "servicePlaceholder": "Select a service",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your business setup needs",
+      "submit": "Send Message",
+      "nameRequired": "Full name is required",
+      "emailRequired": "Email address is required",
+      "invalidEmail": "Please enter a valid email address",
+      "phoneRequired": "Phone number is required",
+      "messageRequired": "Message is required",
+      "messageMinLength": "Message must be at least 10 characters long"
+    },
+    "info": {
+      "address": "Dubai, United Arab Emirates",
+      "phone": "+971 4 123 4567",
+      "email": "info@dubaiconsulting.ae",
+      "hours": "Monday - Friday: 9:00 AM - 6:00 PM",
+      "weekend": "Saturday: 9:00 AM - 2:00 PM"
+    }
+  },
+  "resources": {
+    "title": "Resources & Insights",
+    "subtitle": "Stay Informed with Expert Business Guidance",
+    "description": "Access our comprehensive collection of business guides, industry insights, and regulatory updates to help you make informed decisions about your business setup in Dubai.",
+    "blog": {
+      "title": "Latest Insights",
+      "subtitle": "Stay updated with the latest business trends and regulatory changes",
+      "readMore": "Read More",
+      "publishedOn": "Published on",
+      "author": "By",
+      "category": "Category",
+      "tags": "Tags",
+      "share": "Share",
+      "relatedPosts": "Related Posts"
+    },
+    "guides": {
+      "title": "Business Guides",
+      "subtitle": "Comprehensive guides covering all aspects of business setup in Dubai",
+      "businessSetup": "Business Setup Guide",
+      "legalCompliance": "Legal Compliance Guide",
+      "taxPlanning": "Tax Planning Guide",
+      "visaProcess": "Visa Process Guide"
+    },
+    "faqs": {
+      "title": "Frequently Asked Questions",
+      "subtitle": "Find answers to common questions about business setup in Dubai",
+      "businessSetup": "Business Setup FAQs",
+      "legalServices": "Legal Services FAQs",
+      "taxAccounting": "Tax & Accounting FAQs",
+      "visaServices": "Visa Services FAQs"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Welcome Back",
+      "subtitle": "Sign in to your Dubai Business Setup Consulting account",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email",
+      "password": "Password",
+      "passwordPlaceholder": "Enter your password",
+      "showPassword": "Show password",
+      "hidePassword": "Hide password",
+      "forgotPassword": "Forgot your password?",
+      "signIn": "Sign In",
+      "noAccount": "Don't have an account?",
+      "signUp": "Sign up",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "invalidCredentials": "Invalid email or password",
+      "loginError": "An error occurred during login"
+    },
+    "register": {
+      "title": "Create Account",
+      "subtitle": "Join Dubai Business Setup Consulting to start your business journey",
+      "firstName": "First Name",
+      "firstNamePlaceholder": "Enter your first name",
+      "lastName": "Last Name",
+      "lastNamePlaceholder": "Enter your last name",
+      "email": "Email Address",
+      "emailPlaceholder": "Enter your email address",
+      "password": "Password",
+      "passwordPlaceholder": "Create a strong password",
+      "confirmPassword": "Confirm Password",
+      "confirmPasswordPlaceholder": "Confirm your password",
+      "company": "Company Name",
+      "companyPlaceholder": "Enter your company name (optional)",
+      "phone": "Phone Number",
+      "phonePlaceholder": "Enter your phone number (optional)",
+      "country": "Country",
+      "countryPlaceholder": "Select your country (optional)",
+      "createAccount": "Create Account",
+      "haveAccount": "Already have an account?",
+      "signIn": "Sign in",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "emailRequired": "Email is required",
+      "invalidEmail": "Please enter a valid email address",
+      "passwordRequired": "Password is required",
+      "passwordMinLength": "Password must be at least 8 characters",
+      "passwordStrength": "Password must contain uppercase, lowercase, number, and special character",
+      "confirmPasswordRequired": "Please confirm your password",
+      "passwordsNotMatch": "Passwords do not match",
+      "registrationError": "An error occurred during registration",
+      "userExists": "User with this email already exists"
+    }
+  },
+  "dashboard": {
+    "title": "Client Dashboard",
+    "welcome": "Welcome back, {name}!",
+    "logout": "Logout",
+    "navigation": "Navigation",
+    "tabs": {
+      "overview": "Overview",
+      "knowledgeBase": "Knowledge Base",
+      "downloads": "Downloads",
+      "profile": "Profile"
+    },
+    "categories": {
+      "businessSetup": "Business Setup",
+      "banking": "Banking",
+      "accounting": "Accounting",
+      "tax": "Tax",
+      "vat": "VAT",
+      "proServices": "PRO Services",
+      "legal": "Legal",
+      "costing": "Costing",
+      "templates": "Templates",
+      "guides": "Guides",
+      "faqs": "FAQs"
+    },
+    "overview": {
+      "quickStats": "Quick Stats",
+      "availableResources": "Available Resources",
+      "downloadableFiles": "Downloadable Files",
+      "guidesAvailable": "Guides Available",
+      "recentArticles": "Recent Articles"
+    },
+    "knowledgeBase": {
+      "searchPlaceholder": "Search knowledge base...",
+      "allCategories": "All Categories",
+      "browseByCategory": "Browse by Category"
+    },
+    "downloads": {
+      "title": "Downloadable Resources"
+    },
+    "profile": {
+      "profileInformation": "Profile Information",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email",
+      "company": "Company",
+      "phone": "Phone",
+      "country": "Country",
+      "notSpecified": "Not specified",
+      "editProfile": "Edit Profile",
+      "accountInformation": "Account Information",
+      "memberSince": "Member Since",
+      "lastLogin": "Last Login",
+      "accountStatus": "Account Status",
+      "active": "Active"
+    },
+    "common": {
+      "minRead": "min read",
+      "views": "views",
+      "articles": "articles",
+      "min": "min",
+      "download": "Download",
+      "unknownSize": "Unknown size",
+      "downloads": "downloads"
+    }
+  },
+  "admin": {
+    "title": "Admin Dashboard",
+    "subtitle": "Manage content, users, and website settings",
+    "tabs": {
+      "overview": "Overview",
+      "blogPosts": "Blog Posts",
+      "knowledgeBase": "Knowledge Base",
+      "services": "Services",
+      "users": "Users"
+    },
+    "stats": {
+      "totalUsers": "Total Users",
+      "blogPosts": "Blog Posts",
+      "knowledgeBase": "Knowledge Base",
+      "services": "Services",
+      "thisMonth": "this month",
+      "published": "published"
+    },
+    "recent": {
+      "blogPosts": "Recent Blog Posts",
+      "knowledgeBase": "Recent Knowledge Base"
+    },
+    "actions": {
+      "newBlogPost": "New Blog Post",
+      "newKnowledgeEntry": "New Knowledge Entry",
+      "newService": "New Service"
+    },
+    "table": {
+      "title": "Title",
+      "author": "Author",
+      "category": "Category",
+      "status": "Status",
+      "created": "Created",
+      "actions": "Actions",
+      "type": "Type",
+      "slug": "Slug",
+      "featured": "Featured"
+    },
+    "users": {
+      "comingSoon": "User management features coming soon..."
+    },
+    "forms": {
+      "create": "Create",
+      "edit": "Edit",
+      "close": "Close",
+      "comingSoon": "Advanced form components coming soon..."
+    }
+  }
+}

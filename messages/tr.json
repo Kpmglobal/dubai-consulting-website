@@ -1,0 +1,74 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "resources": "Kaynaklar",
+    "contact": "İletişim"
+  },
+  "hero": {
+    "title": "Dubai'de İş Yolculuğunuza Başlayın",
+    "subtitle": "Şirket kurulumu, bankacılık, vergi danışmanlığı ve sürekli destek için uzman rehberlik. UAE'de iş başarınız için güvenilir ortağınız.",
+    "cta": "Başlayın"
+  },
+  "services": {
+    "sectionTitle": "Hizmetlerimiz",
+    "sectionDescription": "Dubai'de kapsamlı iş kurulum hizmetleri. Şirket kurulumundan sürekli desteğe kadar, UAE'de iş başarınız için uzman rehberlik sağlıyoruz.",
+    "businessSetup": {
+      "title": "Şirket Kurulumu",
+      "description": "Dubai'de uzman rehberlik ile profesyonel iş kayıt hizmetleri."
+    },
+    "legalServices": {
+      "title": "Hukuki Hizmetler",
+      "description": "UAE'deki iş operasyonlarınız için kapsamlı hukuki destek."
+    },
+    "taxAccounting": {
+      "title": "Vergi ve Muhasebe",
+      "description": "UAE şirketleri için uzman vergi planlama ve muhasebe hizmetleri."
+    },
+    "visaServices": {
+      "title": "Vize Hizmetleri",
+      "description": "Girişimciler için profesyonel vize ve göçmenlik hizmetleri."
+    },
+    "investment": {
+      "title": "Yatırım Danışmanlığı",
+      "description": "Dubai'de iş büyümesi için stratejik yatırım rehberliği."
+    },
+    "consulting": {
+      "title": "İş Danışmanlığı",
+      "description": "Stratejik iş danışmanlığı ve pazar giriş desteği."
+    },
+    "ctaTitle": "Dubai'de İşinizi Kurmaya Hazır mısınız?",
+    "ctaDescription": "İş hedeflerinizi tartışalım ve uzman ekibimizin UAE pazarında başarıya ulaşmanıza nasıl yardımcı olabileceğini keşfedelim.",
+    "ctaButton": "Ücretsiz Danışmanlık Alın",
+    "viewAllButton": "Tüm Hizmetleri Görün"
+  },
+  "common": {
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "footer": {
+    "description": "UAE'de iş başarınız için güvenilir ortağınız. 15+ yıllık deneyimle Dubai'de profesyonel iş kurulum danışmanlık hizmetleri.",
+    "address": "Business Bay, Dubai, UAE",
+    "phone": "+971 4 123 4567",
+    "email": "info@dubaiconsulting.ae",
+    "quickLinks": "Hızlı Bağlantılar",
+    "services": "Hizmetlerimiz",
+    "resources": "Kaynaklar",
+    "company": "Şirket",
+    "blog": "Blog",
+    "guides": "Rehberler",
+    "faqs": "SSS",
+    "about": "Hakkımızda",
+    "team": "Ekibimiz",
+    "careers": "Kariyer",
+    "newsletter": "Bültenimizle Güncel Kalın",
+    "newsletterDescription": "En son iş içgörülerini, düzenleyici güncellemeleri ve uzman tavsiyeleri doğrudan gelen kutunuza alın.",
+    "newsletterPlaceholder": "E-posta adresinizi girin",
+    "newsletterButton": "Abone Ol",
+    "copyright": "© 2024 KPM Global Services. Tüm hakları saklıdır.",
+    "followUs": "Bizi Takip Edin",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası"
+  }
+}

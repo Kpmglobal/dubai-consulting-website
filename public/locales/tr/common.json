@@ -1,0 +1,338 @@
+{
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "services": "Hizmetler",
+    "resources": "Kaynaklar",
+    "contact": "İletişim",
+    "dashboard": "Kontrol Paneli",
+    "admin": "Admin",
+    "login": "Giriş",
+    "register": "Kayıt Ol",
+    "logout": "Çıkış"
+  },
+  "footer": {
+    "company": "Şirket",
+    "about": "Hakkımızda",
+    "team": "Ekibimiz",
+    "careers": "Kariyer",
+    "contact": "İletişim",
+    "services": "Hizmetler",
+    "businessSetup": "İş Kurulumu",
+    "legalServices": "Hukuki Hizmetler",
+    "taxAccounting": "Vergi ve Muhasebe",
+    "visaServices": "Vize Hizmetleri",
+    "resources": "Kaynaklar",
+    "blog": "Blog",
+    "guides": "Rehberler",
+    "faqs": "SSS",
+    "newsletter": "Bülten",
+    "newsletterPlaceholder": "E-posta adresinizi girin",
+    "newsletterButton": "Abone Ol",
+    "newsletterDescription": "En son iş içgörüleri ve BAE düzenlemeleri hakkında güncel kalın",
+    "copyright": "© 2024 Dubai Business Setup Consulting. Tüm hakları saklıdır.",
+    "followUs": "Bizi Takip Edin",
+    "address": "Dubai, Birleşik Arap Emirlikleri",
+    "phone": "+971 4 123 4567",
+    "email": "info@dubaiconsulting.ae",
+    "description": "BAE'de iş başarısı için güvenilir ortağınız. Girişimcilerin Dubai'de iş kurmasına ve büyütmesine yardımcı olmak için kapsamlı iş kurulumu, hukuki ve danışmanlık hizmetleri sunuyoruz.",
+    "quickLinks": "Hızlı Bağlantılar",
+    "privacy": "Gizlilik Politikası",
+    "terms": "Kullanım Şartları",
+    "cookies": "Çerez Politikası"
+  },
+  "hero": {
+    "title": "Dubai'de İş Başarısına Giden Yolunuz",
+    "subtitle": "Girişimcilerin BAE'de iş kurmasına ve büyütmesine yardımcı olmak için kapsamlı iş kurulumu, hukuki ve danışmanlık hizmetleri",
+    "cta": "Bugün Başlayın",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "services": {
+    "businessSetup": {
+      "title": "İş Kurulumu",
+      "description": "Şirket kaydı, lisanslama ve kurumsal yapılandırma dahil tam iş kurulum hizmetleri"
+    },
+    "legalServices": {
+      "title": "Hukuki Hizmetler",
+      "description": "İş uyumluluğu, sözleşmeler ve düzenleyici gereksinimler için uzman hukuki danışmanlık"
+    },
+    "taxAccounting": {
+      "title": "Vergi ve Muhasebe",
+      "description": "Kapsamlı vergi planlaması, muhasebe hizmetleri ve finansal uyumluluk desteği"
+    },
+    "visaServices": {
+      "title": "Vize Hizmetleri",
+      "description": "İş sahipleri ve çalışanlar için kolaylaştırılmış vize işlemi ve göçmenlik hizmetleri"
+    }
+  },
+  "common": {
+    "learnMore": "Daha Fazla Bilgi",
+    "getStarted": "Başlayın",
+    "contactUs": "Bizimle İletişime Geçin",
+    "readMore": "Devamını Oku",
+    "viewAll": "Tümünü Gör",
+    "submit": "Gönder",
+    "send": "Gönder",
+    "cancel": "İptal",
+    "save": "Kaydet",
+    "edit": "Düzenle",
+    "delete": "Sil",
+    "close": "Kapat",
+    "loading": "Yükleniyor...",
+    "error": "Hata",
+    "success": "Başarılı",
+    "warning": "Uyarı",
+    "info": "Bilgi"
+  },
+  "about": {
+    "title": "Dubai Business Setup Consulting Hakkında",
+    "subtitle": "BAE'de İş Başarısı İçin Güvenilir Ortağınız",
+    "description": "Dubai ve BAE genelinde iş kurulum hizmetlerinde uzmanlaşmış önde gelen bir danışmanlık firmasıyız. Yılların deneyimi ve derin yerel bilgi ile girişimcilere ve şirketlere bu dinamik pazarda iş kurma ve yürütme karmaşıklıklarında yardımcı oluyoruz.",
+    "mission": "Misyonumuz",
+    "missionText": "Girişimcilerin temel işlerine odaklanmasını sağlarken biz düzenleyici ve idari karmaşıklıkları ele alan kapsamlı, güvenilir ve verimli iş kurulum hizmetleri sunmak.",
+    "vision": "Vizyonumuz",
+    "visionText": "BAE'de mükemmellik, dürüstlük ve müşteri başarısı ile tanınan en güvenilir ve tercih edilen iş kurulum danışmanlığı olmak.",
+    "values": "Değerlerimiz",
+    "excellence": "Mükemmellik",
+    "excellenceText": "Tüm hizmetlerimizde ve müşteri etkileşimlerimizde en yüksek standartları koruyoruz.",
+    "integrity": "Dürüstlük",
+    "integrityText": "İşimizi dürüstlük, şeffaflık ve etik uygulamalarla yürütüyoruz.",
+    "innovation": "İnovasyon",
+    "innovationText": "Süreçlerimizi sürekli iyileştiriyor ve yeni teknolojileri benimsiyoruz.",
+    "clientFocus": "Müşteri Odaklılık",
+    "clientFocusText": "Müşterilerimizin başarısı bizim birincil hedefimiz ve başarı ölçümümüzdür."
+  },
+  "contact": {
+    "title": "Bizimle İletişime Geçin",
+    "subtitle": "Uzman İş Kurulum Rehberliği İçin İletişime Geçin",
+    "description": "Dubai'de iş yolculuğunuza başlamaya hazır mısınız? Kişiselleştirilmiş rehberlik ve destek için uzman ekibimizle iletişime geçin.",
+    "form": {
+      "name": "Tam Ad",
+      "namePlaceholder": "Tam adınızı girin",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "phone": "Telefon Numarası",
+      "phonePlaceholder": "Telefon numaranızı girin",
+      "company": "Şirket Adı",
+      "companyPlaceholder": "Şirket adınızı girin (isteğe bağlı)",
+      "service": "İlgilenilen Hizmet",
+      "servicePlaceholder": "Bir hizmet seçin",
+      "message": "Mesaj",
+      "messagePlaceholder": "İş kurulum ihtiyaçlarınız hakkında bize anlatın",
+      "submit": "Mesaj Gönder",
+      "nameRequired": "Tam ad gerekli",
+      "emailRequired": "E-posta adresi gerekli",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "phoneRequired": "Telefon numarası gerekli",
+      "messageRequired": "Mesaj gerekli",
+      "messageMinLength": "Mesaj en az 10 karakter olmalıdır"
+    },
+    "info": {
+      "address": "Dubai, Birleşik Arap Emirlikleri",
+      "phone": "+971 4 123 4567",
+      "email": "info@dubaiconsulting.ae",
+      "hours": "Pazartesi - Cuma: 09:00 - 18:00",
+      "weekend": "Cumartesi: 09:00 - 14:00"
+    }
+  },
+  "resources": {
+    "title": "Kaynaklar ve İçgörüler",
+    "subtitle": "Uzman İş Rehberliği ile Güncel Kalın",
+    "description": "Dubai'de iş kurulumunuz hakkında bilinçli kararlar almanıza yardımcı olmak için kapsamlı iş rehberleri, sektör içgörüleri ve düzenleyici güncellemeler koleksiyonumuza erişin.",
+    "blog": {
+      "title": "Son İçgörüler",
+      "subtitle": "En son iş trendleri ve düzenleyici değişiklikler hakkında güncel kalın",
+      "readMore": "Devamını Oku",
+      "publishedOn": "Yayınlanma tarihi",
+      "author": "Yazar",
+      "category": "Kategori",
+      "tags": "Etiketler",
+      "share": "Paylaş",
+      "relatedPosts": "İlgili Yazılar"
+    },
+    "guides": {
+      "title": "İş Rehberleri",
+      "subtitle": "Dubai'de iş kurulumunun tüm yönlerini kapsayan kapsamlı rehberler",
+      "businessSetup": "İş Kurulum Rehberi",
+      "legalCompliance": "Hukuki Uyumluluk Rehberi",
+      "taxPlanning": "Vergi Planlama Rehberi",
+      "visaProcess": "Vize Süreci Rehberi"
+    },
+    "faqs": {
+      "title": "Sık Sorulan Sorular",
+      "subtitle": "Dubai'de iş kurulumu hakkında yaygın soruların cevaplarını bulun",
+      "businessSetup": "İş Kurulum SSS",
+      "legalServices": "Hukuki Hizmetler SSS",
+      "taxAccounting": "Vergi ve Muhasebe SSS",
+      "visaServices": "Vize Hizmetleri SSS"
+    }
+  },
+  "auth": {
+    "login": {
+      "title": "Tekrar Hoş Geldiniz",
+      "subtitle": "Dubai Business Setup Consulting hesabınıza giriş yapın",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "password": "Şifre",
+      "passwordPlaceholder": "Şifrenizi girin",
+      "showPassword": "Şifreyi göster",
+      "hidePassword": "Şifreyi gizle",
+      "forgotPassword": "Şifrenizi mi unuttunuz?",
+      "signIn": "Giriş Yap",
+      "noAccount": "Hesabınız yok mu?",
+      "signUp": "Kayıt olun",
+      "emailRequired": "E-posta gerekli",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "passwordRequired": "Şifre gerekli",
+      "invalidCredentials": "Geçersiz e-posta veya şifre",
+      "loginError": "Giriş sırasında bir hata oluştu"
+    },
+    "register": {
+      "title": "Hesap Oluştur",
+      "subtitle": "İş yolculuğunuza başlamak için Dubai Business Setup Consulting'e katılın",
+      "firstName": "Ad",
+      "firstNamePlaceholder": "Adınızı girin",
+      "lastName": "Soyad",
+      "lastNamePlaceholder": "Soyadınızı girin",
+      "email": "E-posta Adresi",
+      "emailPlaceholder": "E-posta adresinizi girin",
+      "password": "Şifre",
+      "passwordPlaceholder": "Güçlü bir şifre oluşturun",
+      "confirmPassword": "Şifreyi Onayla",
+      "confirmPasswordPlaceholder": "Şifrenizi onaylayın",
+      "company": "Şirket Adı",
+      "companyPlaceholder": "Şirket adınızı girin (isteğe bağlı)",
+      "phone": "Telefon Numarası",
+      "phonePlaceholder": "Telefon numaranızı girin (isteğe bağlı)",
+      "country": "Ülke",
+      "countryPlaceholder": "Ülkenizi seçin (isteğe bağlı)",
+      "createAccount": "Hesap Oluştur",
+      "haveAccount": "Zaten hesabınız var mı?",
+      "signIn": "Giriş yapın",
+      "firstNameRequired": "Ad gerekli",
+      "lastNameRequired": "Soyad gerekli",
+      "emailRequired": "E-posta gerekli",
+      "invalidEmail": "Lütfen geçerli bir e-posta adresi girin",
+      "passwordRequired": "Şifre gerekli",
+      "passwordMinLength": "Şifre en az 8 karakter olmalıdır",
+      "passwordStrength": "Şifre büyük harf, küçük harf, rakam ve özel karakter içermelidir",
+      "confirmPasswordRequired": "Lütfen şifrenizi onaylayın",
+      "passwordsNotMatch": "Şifreler eşleşmiyor",
+      "registrationError": "Kayıt sırasında bir hata oluştu",
+      "userExists": "Bu e-posta ile kullanıcı zaten mevcut"
+    }
+  },
+  "dashboard": {
+    "title": "Müşteri Kontrol Paneli",
+    "welcome": "Tekrar hoş geldiniz, {name}!",
+    "logout": "Çıkış",
+    "navigation": "Navigasyon",
+    "tabs": {
+      "overview": "Genel Bakış",
+      "knowledgeBase": "Bilgi Tabanı",
+      "downloads": "İndirilenler",
+      "profile": "Profil"
+    },
+    "categories": {
+      "businessSetup": "İş Kurulumu",
+      "banking": "Bankacılık",
+      "accounting": "Muhasebe",
+      "tax": "Vergi",
+      "vat": "KDV",
+      "proServices": "PRO Hizmetleri",
+      "legal": "Hukuki",
+      "costing": "Maliyetlendirme",
+      "templates": "Şablonlar",
+      "guides": "Rehberler",
+      "faqs": "SSS"
+    },
+    "overview": {
+      "quickStats": "Hızlı İstatistikler",
+      "availableResources": "Mevcut Kaynaklar",
+      "downloadableFiles": "İndirilebilir Dosyalar",
+      "guidesAvailable": "Mevcut Rehberler",
+      "recentArticles": "Son Makaleler"
+    },
+    "knowledgeBase": {
+      "searchPlaceholder": "Bilgi tabanında ara...",
+      "allCategories": "Tüm Kategoriler",
+      "browseByCategory": "Kategoriye Göre Göz At"
+    },
+    "downloads": {
+      "title": "İndirilebilir Kaynaklar"
+    },
+    "profile": {
+      "profileInformation": "Profil Bilgileri",
+      "firstName": "Ad",
+      "lastName": "Soyad",
+      "email": "E-posta",
+      "company": "Şirket",
+      "phone": "Telefon",
+      "country": "Ülke",
+      "notSpecified": "Belirtilmemiş",
+      "editProfile": "Profili Düzenle",
+      "accountInformation": "Hesap Bilgileri",
+      "memberSince": "Üye Olma Tarihi",
+      "lastLogin": "Son Giriş",
+      "accountStatus": "Hesap Durumu",
+      "active": "Aktif"
+    },
+    "common": {
+      "minRead": "dakika okuma",
+      "views": "görüntüleme",
+      "articles": "makale",
+      "min": "dak",
+      "download": "İndir",
+      "unknownSize": "Bilinmeyen boyut",
+      "downloads": "indirme"
+    }
+  },
+  "admin": {
+    "title": "Admin Kontrol Paneli",
+    "subtitle": "İçerik, kullanıcılar ve web sitesi ayarlarını yönetin",
+    "tabs": {
+      "overview": "Genel Bakış",
+      "blogPosts": "Blog Yazıları",
+      "knowledgeBase": "Bilgi Tabanı",
+      "services": "Hizmetler",
+      "users": "Kullanıcılar"
+    },
+    "stats": {
+      "totalUsers": "Toplam Kullanıcı",
+      "blogPosts": "Blog Yazıları",
+      "knowledgeBase": "Bilgi Tabanı",
+      "services": "Hizmetler",
+      "thisMonth": "bu ay",
+      "published": "yayınlandı"
+    },
+    "recent": {
+      "blogPosts": "Son Blog Yazıları",
+      "knowledgeBase": "Son Bilgi Tabanı"
+    },
+    "actions": {
+      "newBlogPost": "Yeni Blog Yazısı",
+      "newKnowledgeEntry": "Yeni Bilgi Tabanı Girişi",
+      "newService": "Yeni Hizmet"
+    },
+    "table": {
+      "title": "Başlık",
+      "author": "Yazar",
+      "category": "Kategori",
+      "status": "Durum",
+      "created": "Oluşturuldu",
+      "actions": "İşlemler",
+      "type": "Tür",
+      "slug": "Slug",
+      "featured": "Öne Çıkan"
+    },
+    "users": {
+      "comingSoon": "Kullanıcı yönetimi özellikleri yakında..."
+    },
+    "forms": {
+      "create": "Oluştur",
+      "edit": "Düzenle",
+      "close": "Kapat",
+      "comingSoon": "Gelişmiş form bileşenleri yakında..."
+    }
+  }
+}
