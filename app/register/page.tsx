@@ -25,7 +25,13 @@ export const metadata: Metadata = {
 
 export default function RegisterPage() {
   return (
-    <AuthLayout>
+    <AuthLayout
+      title="Create Account"
+      subtitle="Join KPM Global Services for exclusive business resources"
+      footerText="Already have an account?"
+      footerLink="/login"
+      footerLinkText="Sign in here"
+    >
       <RegisterForm />
     </AuthLayout>
   );

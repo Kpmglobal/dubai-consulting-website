@@ -25,7 +25,13 @@ export const metadata: Metadata = {
 
 export default function LoginPage() {
   return (
-    <AuthLayout>
+    <AuthLayout
+      title="Welcome Back"
+      subtitle="Sign in to your KPM Global Services account"
+      footerText="Don't have an account?"
+      footerLink="/register"
+      footerLinkText="Sign up here"
+    >
       <LoginForm />
     </AuthLayout>
   );
