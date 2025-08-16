@@ -5,7 +5,7 @@ import {
   Share2, 
   Facebook, 
   Twitter, 
-  LinkedIn, 
+  Linkedin, 
   Link as LinkIcon,
   CheckCircle,
   Copy
@@ -91,7 +91,7 @@ export default function SocialShare({
     },
     {
       name: 'LinkedIn',
-      icon: LinkedIn,
+      icon: Linkedin,
       color: 'bg-blue-700 hover:bg-blue-800',
       action: () => handleShare('linkedin')
     },

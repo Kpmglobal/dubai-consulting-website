@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import { useTranslations, useLocale } from 'next-intl'
+import { useRouter } from 'next/navigation'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 import ProtectedRoute from '@/components/auth/ProtectedRoute'
@@ -91,6 +92,9 @@ interface DashboardStats {
 }
 
 export default function AdminPage() {
+  const t = useTranslations('admin')
+  const locale = useLocale()
+  const router = useRouter()
   const [activeTab, setActiveTab] = useState('overview')
   const [searchQuery, setSearchQuery] = useState('')
   const [showForm, setShowForm] = useState(false)
@@ -102,8 +106,11 @@ export default function AdminPage() {
   const [knowledgeBase, setKnowledgeBase] = useState<KnowledgeBaseEntry[]>([])
   const [services, setServices] = useState<Service[]>([])
 
-  const t = useTranslations()
-  const locale = useLocale()
+  // Helper function to safely access localized titles
+  const getLocalizedTitle = (titleObj: { en: string; ru?: string; tr?: string }, currentLocale: string) => {
+    return titleObj[currentLocale as keyof typeof titleObj] || titleObj.en
+  }
+
   const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api'
 
   useEffect(() => {
@@ -254,10 +261,10 @@ export default function AdminPage() {
             <div className="flex flex-col lg:flex-row items-start lg:items-center justify-between">
               <div>
                 <h1 className="text-3xl font-bold text-white mb-2">
-                  {t('admin.title')}
+                  {t('title')}
                 </h1>
                 <p className="text-gray-300">
-                  {t('admin.subtitle')}
+                  {t('subtitle')}
                 </p>
               </div>
               <div className="mt-4 lg:mt-0 flex space-x-3">
@@ -266,21 +273,21 @@ export default function AdminPage() {
                   className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
                 >
                   <Plus className="w-4 h-4 mr-2 inline" />
-                  {t('admin.actions.newBlogPost')}
+                  {t('actions.newBlogPost')}
                 </button>
                 <button 
                   onClick={() => handleCreate('knowledge')}
                   className="bg-secondary-600 hover:bg-secondary-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
                 >
                   <Plus className="w-4 h-4 mr-2 inline" />
-                  {t('admin.actions.newKnowledgeEntry')}
+                  {t('actions.newKnowledgeEntry')}
                 </button>
                 <button 
                   onClick={() => handleCreate('service')}
                   className="bg-accent-600 hover:bg-accent-700 text-white px-4 py-2 rounded-lg transition-colors duration-200"
                 >
                   <Plus className="w-4 h-4 mr-2 inline" />
-                  {t('admin.actions.newService')}
+                  {t('actions.newService')}
                 </button>
               </div>
             </div>
@@ -292,11 +299,11 @@ export default function AdminPage() {
           <div className="container-custom">
             <nav className="flex space-x-8">
               {[
-                { id: 'overview', label: t('admin.tabs.overview'), icon: Eye },
-                { id: 'blog', label: t('admin.tabs.blogPosts'), icon: FileText },
-                { id: 'knowledge', label: t('admin.tabs.knowledgeBase'), icon: BookOpen },
-                { id: 'services', label: t('admin.tabs.services'), icon: Settings },
-                { id: 'users', label: t('admin.tabs.users'), icon: Users }
+                { id: 'overview', label: t('tabs.overview'), icon: Eye },
+                { id: 'blog', label: t('tabs.blogPosts'), icon: FileText },
+                { id: 'knowledge', label: t('tabs.knowledgeBase'), icon: BookOpen },
+                { id: 'services', label: t('tabs.services'), icon: Settings },
+                { id: 'users', label: t('tabs.users'), icon: Users }
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -326,9 +333,9 @@ export default function AdminPage() {
                   <div className="bg-white rounded-xl p-6 shadow-soft">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-gray-600">{t('admin.stats.totalUsers')}</p>
+                        <p className="text-sm font-medium text-gray-600">{t('stats.totalUsers')}</p>
                         <p className="text-2xl font-bold text-gray-900">{stats?.users.total || 0}</p>
-                        <p className="text-sm text-green-600">+{stats?.users.newThisMonth || 0} {t('admin.stats.thisMonth')}</p>
+                        <p className="text-sm text-green-600">+{stats?.users.newThisMonth || 0} {t('stats.thisMonth')}</p>
                       </div>
                       <div className="p-3 bg-primary-100 rounded-lg">
                         <Users className="w-6 h-6 text-primary-600" />
@@ -339,9 +346,9 @@ export default function AdminPage() {
                   <div className="bg-white rounded-xl p-6 shadow-soft">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-gray-600">{t('admin.stats.blogPosts')}</p>
+                        <p className="text-sm font-medium text-gray-600">{t('stats.blogPosts')}</p>
                         <p className="text-2xl font-bold text-gray-900">{stats?.content.blogPosts.total || 0}</p>
-                        <p className="text-sm text-blue-600">{stats?.content.blogPosts.published || 0} {t('admin.stats.published')}</p>
+                        <p className="text-sm text-blue-600">{stats?.content.blogPosts.published || 0} {t('stats.published')}</p>
                       </div>
                       <div className="p-3 bg-secondary-100 rounded-lg">
                         <FileText className="w-6 h-6 text-secondary-600" />
@@ -352,9 +359,9 @@ export default function AdminPage() {
                   <div className="bg-white rounded-xl p-6 shadow-soft">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-gray-600">{t('admin.stats.knowledgeBase')}</p>
+                        <p className="text-sm font-medium text-gray-600">{t('stats.knowledgeBase')}</p>
                         <p className="text-2xl font-bold text-gray-900">{stats?.content.knowledgeBase.total || 0}</p>
-                        <p className="text-sm text-green-600">{stats?.content.knowledgeBase.published || 0} {t('admin.stats.published')}</p>
+                        <p className="text-sm text-green-600">{stats?.content.knowledgeBase.published || 0} {t('stats.published')}</p>
                       </div>
                       <div className="p-3 bg-accent-100 rounded-lg">
                         <BookOpen className="w-6 h-6 text-accent-600" />
@@ -365,9 +372,9 @@ export default function AdminPage() {
                   <div className="bg-white rounded-xl p-6 shadow-soft">
                     <div className="flex items-center justify-between">
                       <div>
-                        <p className="text-sm font-medium text-gray-600">{t('admin.stats.services')}</p>
+                        <p className="text-sm font-medium text-gray-600">{t('stats.services')}</p>
                         <p className="text-2xl font-bold text-gray-900">{stats?.content.services.total || 0}</p>
-                        <p className="text-sm text-purple-600">{stats?.content.services.published || 0} {t('admin.stats.published')}</p>
+                        <p className="text-sm text-purple-600">{stats?.content.services.published || 0} {t('stats.published')}</p>
                       </div>
                       <div className="p-3 bg-purple-100 rounded-lg">
                         <Settings className="w-6 h-6 text-purple-600" />
@@ -380,7 +387,7 @@ export default function AdminPage() {
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                   {/* Recent Blog Posts */}
                   <div className="bg-white rounded-xl p-6 shadow-soft">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('admin.recent.blogPosts')}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('recent.blogPosts')}</h3>
                     <div className="space-y-3">
                       {blogPosts.slice(0, 5).map((post) => (
                         <div key={post._id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
@@ -395,7 +402,7 @@ export default function AdminPage() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <p className="text-sm font-medium text-gray-900 truncate">
-                              {post.title[locale] || post.title.en}
+                              {getLocalizedTitle(post.title, locale)}
                             </p>
                             <p className="text-xs text-gray-500">
                               {post.author.firstName} {post.author.lastName} • {new Date(post.createdAt).toLocaleDateString()}
@@ -411,7 +418,7 @@ export default function AdminPage() {
 
                   {/* Recent Knowledge Base */}
                   <div className="bg-white rounded-xl p-6 shadow-soft">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('admin.recent.knowledgeBase')}</h3>
+                    <h3 className="text-lg font-semibold text-gray-900 mb-4">{t('recent.knowledgeBase')}</h3>
                     <div className="space-y-3">
                       {knowledgeBase.slice(0, 5).map((entry) => (
                         <div key={entry._id} className="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
@@ -422,7 +429,7 @@ export default function AdminPage() {
                           </div>
                           <div className="flex-1 min-w-0">
                             <p className="text-sm font-medium text-gray-900 truncate">
-                              {entry.title[locale] || entry.title.en}
+                              {getLocalizedTitle(entry.title, locale)}
                             </p>
                             <p className="text-xs text-gray-500">
                               {entry.author.firstName} {entry.author.lastName} • {entry.category}
@@ -443,13 +450,13 @@ export default function AdminPage() {
             {activeTab === 'blog' && (
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <h2 className="text-2xl font-bold text-gray-900">{t('admin.tabs.blogPosts')}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">{t('tabs.blogPosts')}</h2>
                   <button
                     onClick={() => handleCreate('blog')}
                     className="bg-primary-600 hover:bg-primary-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center"
                   >
                     <Plus className="w-4 h-4 mr-2" />
-                    {t('admin.actions.newBlogPost')}
+                    {t('actions.newBlogPost')}
                   </button>
                 </div>
 
@@ -459,22 +466,22 @@ export default function AdminPage() {
                       <thead className="bg-gray-50">
                         <tr>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.title')}
+                            {t('table.title')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.author')}
+                            {t('table.author')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.category')}
+                            {t('table.category')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.status')}
+                            {t('table.status')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.created')}
+                            {t('table.created')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.actions')}
+                            {t('table.actions')}
                           </th>
                         </tr>
                       </thead>
@@ -494,7 +501,7 @@ export default function AdminPage() {
                                 </div>
                                 <div className="ml-4">
                                   <div className="text-sm font-medium text-gray-900">
-                                    {post.title[locale] || post.title.en}
+                                    {getLocalizedTitle(post.title, locale)}
                                   </div>
                                   <div className="text-sm text-gray-500">
                                     {post.tags.slice(0, 2).join(', ')}
@@ -546,13 +553,13 @@ export default function AdminPage() {
             {activeTab === 'knowledge' && (
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <h2 className="text-2xl font-bold text-gray-900">{t('admin.tabs.knowledgeBase')}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">{t('tabs.knowledgeBase')}</h2>
                   <button
                     onClick={() => handleCreate('knowledge')}
                     className="bg-secondary-600 hover:bg-secondary-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center"
                   >
                     <Plus className="w-4 h-4 mr-2" />
-                    {t('admin.actions.newKnowledgeEntry')}
+                    {t('actions.newKnowledgeEntry')}
                   </button>
                 </div>
 
@@ -562,22 +569,22 @@ export default function AdminPage() {
                       <thead className="bg-gray-50">
                         <tr>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.title')}
+                            {t('table.title')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.category')}
+                            {t('table.category')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.type')}
+                            {t('table.type')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.author')}
+                            {t('table.author')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.status')}
+                            {t('table.status')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.actions')}
+                            {t('table.actions')}
                           </th>
                         </tr>
                       </thead>
@@ -586,7 +593,7 @@ export default function AdminPage() {
                           <tr key={entry._id} className="hover:bg-gray-50">
                             <td className="px-6 py-4 whitespace-nowrap">
                               <div className="text-sm font-medium text-gray-900">
-                                {entry.title[locale] || entry.title.en}
+                                {getLocalizedTitle(entry.title, locale)}
                               </div>
                               <div className="text-sm text-gray-500">
                                 {entry.requiresAuth ? '🔒 Requires Auth' : '🌐 Public'}
@@ -636,13 +643,13 @@ export default function AdminPage() {
             {activeTab === 'services' && (
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <h2 className="text-2xl font-bold text-gray-900">{t('admin.tabs.services')}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">{t('tabs.services')}</h2>
                   <button
                     onClick={() => handleCreate('service')}
                     className="bg-accent-600 hover:bg-accent-700 text-white px-4 py-2 rounded-lg transition-colors duration-200 flex items-center"
                   >
                     <Plus className="w-4 h-4 mr-2" />
-                    {t('admin.actions.newService')}
+                    {t('actions.newService')}
                   </button>
                 </div>
 
@@ -652,22 +659,22 @@ export default function AdminPage() {
                       <thead className="bg-gray-50">
                         <tr>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.title')}
+                            {t('table.title')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.category')}
+                            {t('table.category')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.slug')}
+                            {t('table.slug')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.status')}
+                            {t('table.status')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.featured')}
+                            {t('table.featured')}
                           </th>
                           <th className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            {t('admin.table.actions')}
+                            {t('table.actions')}
                           </th>
                         </tr>
                       </thead>
@@ -687,10 +694,10 @@ export default function AdminPage() {
                                 </div>
                                 <div className="ml-4">
                                   <div className="text-sm font-medium text-gray-900">
-                                    {service.title[locale] || service.title.en}
+                                    {getLocalizedTitle(service.title, locale)}
                                   </div>
                                   <div className="text-sm text-gray-500">
-                                    {service.description[locale] || service.description.en}
+                                    {getLocalizedTitle(service.description, locale)}
                                   </div>
                                 </div>
                               </div>
@@ -743,11 +750,11 @@ export default function AdminPage() {
             {activeTab === 'users' && (
               <div className="space-y-6">
                 <div className="flex justify-between items-center">
-                  <h2 className="text-2xl font-bold text-gray-900">{t('admin.tabs.users')}</h2>
+                  <h2 className="text-2xl font-bold text-gray-900">{t('tabs.users')}</h2>
                 </div>
 
                 <div className="bg-white rounded-xl shadow-soft p-6">
-                  <p className="text-gray-500">{t('admin.users.comingSoon')}</p>
+                  <p className="text-gray-500">{t('users.comingSoon')}</p>
                 </div>
               </div>
             )}
@@ -761,7 +768,7 @@ export default function AdminPage() {
               <div className="mt-3">
                 <div className="flex justify-between items-center mb-4">
                   <h3 className="text-lg font-medium text-gray-900">
-                    {editingItem ? t('admin.forms.edit') : t('admin.forms.create')} {formType}
+                    {editingItem ? t('forms.edit') : t('forms.create')} {formType}
                   </h3>
                   <button
                     onClick={() => setShowForm(false)}
@@ -773,14 +780,14 @@ export default function AdminPage() {
 
                 <div className="bg-gray-50 p-4 rounded-lg">
                   <p className="text-sm text-gray-600">
-                    {t('admin.forms.comingSoon')}
+                    {t('forms.comingSoon')}
                   </p>
                   <div className="mt-4 flex justify-end space-x-3">
                     <button
                       onClick={() => setShowForm(false)}
                       className="px-4 py-2 text-sm font-medium text-gray-700 bg-white border border-gray-300 rounded-md hover:bg-gray-50"
                     >
-                      {t('admin.forms.close')}
+                      {t('forms.close')}
                     </button>
                   </div>
                 </div>
