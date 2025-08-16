@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
 import ContactHero from '@/components/contact/ContactHero';
 import ContactForm from '@/components/contact/ContactForm';
-import ContactInfo from '@/components/contact/ContactInfo';
 import OfficeLocation from '@/components/contact/GoogleMap';
+import ContactInfo from '@/components/contact/ContactInfo';
 
 export const metadata: Metadata = {
   title: 'Contact Us - KPM Global Services | Dubai Business Consulting',
